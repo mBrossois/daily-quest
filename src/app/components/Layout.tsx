@@ -28,27 +28,27 @@ export function Layout({ stats }: LayoutProps) {
         <div className="max-w-4xl mx-auto px-4 py-4">
           <div className="flex items-start justify-between gap-4 sm:items-center">
             <div className="flex items-center gap-2">
-              <img src="/src/app/assets/logo.svg" alt="Logo" className="w-8 h-8" />
+              <img src="/logo.svg" alt="Logo" className="w-8 h-8" />
               <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 GoalQuest
               </h1>
             </div>
-<div className="flex flex-col-reverse sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
-               <div className="flex items-center gap-2 bg-gradient-to-r from-yellow-100 to-yellow-50 px-3 py-1.5 rounded-full">
-                 <span className="text-base sm:text-lg">⚡</span>
-                 <span className="text-sm sm:text-base font-semibold text-yellow-800">{stats.points} pts</span>
-               </div>
-               <div className="flex items-center gap-2 bg-gradient-to-r from-blue-100 to-blue-50 px-3 py-1.5 rounded-full">
-                 <span className="text-base sm:text-lg">🏅</span>
-                 <span className="text-sm sm:text-base font-semibold text-blue-800">Level {stats.level}</span>
-               </div>
-               {stats.streak > 0 && (
-                 <div className="flex items-center gap-2 bg-gradient-to-r from-orange-100 to-orange-50 px-3 py-1.5 rounded-full">
-                   <span className="text-base sm:text-lg">🔥</span>
-                   <span className="text-sm sm:text-base font-semibold text-orange-800">{stats.streak} days</span>
-                 </div>
-               )}
-             </div>
+<div className="flex flex-col-reverse sm:flex-row items-stretch sm:items-center gap-2 sm:gap-4">
+                <div className="flex items-center justify-center sm:justify-start gap-2 bg-gradient-to-r from-yellow-100 to-yellow-50 px-3 py-1.5 rounded-full">
+                  <span className="text-base sm:text-lg">⚡</span>
+                  <span className="text-sm sm:text-base font-semibold text-yellow-800">{stats.points} pts</span>
+                </div>
+                <div className="flex items-center justify-center sm:justify-start gap-2 bg-gradient-to-r from-blue-100 to-blue-50 px-3 py-1.5 rounded-full">
+                  <span className="text-base sm:text-lg">🏅</span>
+                  <span className="text-sm sm:text-base font-semibold text-blue-800">Level {stats.level}</span>
+                </div>
+                {stats.streak > 0 && (
+                  <div className="flex items-center justify-center sm:justify-start gap-2 bg-gradient-to-r from-orange-100 to-orange-50 px-3 py-1.5 rounded-full">
+                    <span className="text-base sm:text-lg">🔥</span>
+                    <span className="text-sm sm:text-base font-semibold text-orange-800">{stats.streak} days</span>
+                  </div>
+                )}
+              </div>
           </div>
           {/* Progress bar */}
           <div className="mt-3">
