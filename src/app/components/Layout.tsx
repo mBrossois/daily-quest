@@ -30,7 +30,7 @@ export function Layout({ stats }: LayoutProps) {
             <div className="flex items-center gap-2">
               <img src="/logo.svg" alt="Logo" className="w-8 h-8" />
               <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                GoalQuest
+                Monthly Quest
               </h1>
             </div>
 <div className="flex flex-col-reverse sm:flex-row items-stretch sm:items-center gap-2 sm:gap-4">
